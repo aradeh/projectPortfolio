@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Harshad Arade</title>
+  <link rel="shortcut icon" href="/img/ico-16.png">
+
+
+  <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="../node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <link href="styles/mystyle.css" rel="stylesheet">
+
+
+
+
+</head>
+
+
+<body>
+
+<!--navigation-->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+
+        </button>
+
+        <a class="navbar-brand" href="index.html"><!--<img src="" height=30 width=41>--> Harshad Arade</a>
+
+      </div>
+      <div class="navbar-collapse collapse navbar-right" id="navbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html"><span class="fa fa-home"></span>&nbsp;Home</a></li>
+          <li><a href="#"><span class="fa fa-graduation-cap"></span>&nbsp;About</a></li>
+          <li><a href="#"><span class="fa fa-briefcase"></span>&nbsp;Work</a></li>
+          <li><a href="#"><span class="fa fa-code"></span>&nbsp;Skills</a></li>
+          <li><a href="#"><span class="fa fa-file-o"></span>&nbsp;Resume</a></li>
+          <li class="active"><a href="#"><span class="fa fa-envelope-o"></span>&nbsp;Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container bg2">
+    <div class="row">
+        <!-- Section title -->
+        <div class="section-title item_bottom text-center">
+            <div>
+                <span class="fa fa-envelope fa-2x"></span>
+            </div>
+            <h1>Connect with Me <span></span></h1>
+        </div>
+        <!-- End Section title -->
+    </div>
+    <div class="row item_fade_in">
+        <div class="col-md-6 col-md-offset-3 text-center contact-block">
+            <!-- Contact Details -->
+            <i class="fa fa-map-marker fa-3x"></i>
+            <p>
+                3170 W 14th Ave<br>Denver, CO 80204, USA
+            </p>
+            <p>
+                +1 (720) 921-6765
+            </p>
+            <!-- End Contact Details -->
+            <!-- Social Icon -->
+            <div class="social-icon">
+                <a target="_blank" href="https://www.facebook.com/harsh.arde"><i class="fa fa-facebook-square fa-3x"></i></a>
+                <a target="_blank" href="https://twitter.com/harsharde"><i class="fa fa-twitter-square fa-3x"></i></a>
+                <a target="_blank" href="#"><i class="fa fa-google-plus-square fa-3x"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/harshadarade"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                <a target="_blank" href="#"><i class="fa fa-skype fa-3x"></i></a>
+            </div>
+            <!-- End Social Icon -->
+        </div>
+    </div>
+    <div class="row item_fade_in">
+        <h4 class="text-center">Send me Email</h4>
+        <div class="col-md-6 col-md-offset-3">
+            <div class="form-respond text-center">
+            </div>
+            <form method="post" name="contactform" id="contactform" class="form validate item_bottom" role="form">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" class="form-control required" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control required email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="message" class="form-control input-lg required" rows="9" placeholder="Enter Message"></textarea>
+                </div>
+                <div class="form-group text-center">
+                    <input type="submit" id="contactForm_submit" class="btn btn-trans btn-border btn-full" value="Send" onclick="#myModel">
+                </div>
+                <input type="hidden" name="subject" value="Contact from your site">
+            </form>
+        </div>
+    </div>
+    <!-- End form contact -->
+</div>
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Email to Harshad</h4>
+      </div>
+      <div class="modal-body">
+        <p>Thank you. I will get back to you soon.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+  <footer class="text-center row-footer row-inverse">
+      <!-- Footer Text -->
+      <div class="container text-center item_top">
+          <img class="footer-logo" src="" alt="footer logo"><br />
+          &copy; Copyright 2017 | Harshad Arade
+      </div>
+      <!-- End Footer Text -->
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
