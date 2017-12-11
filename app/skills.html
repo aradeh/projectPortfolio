@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" ng-app="">
 
 <head>
   <meta charset="utf-8">
@@ -68,9 +68,67 @@
 
   </div>
   </header>
-
+ <hr>
   <!--content-->
-  <div class="container">
+
+    <div class="container" ng-init="
+        programming = [{
+         lang: 'Java',
+         percent: '80%'
+        },
+        {
+            lang: 'JavaScript',
+            percent: 85
+        },
+        {
+            lang: 'PHP',
+            percent: 75
+        },
+        {
+            lang: 'Pyhton',
+            percent: 60
+        },
+        {
+            lang: 'PL/SQL',
+            percent: 85
+        },
+        {
+            lang: 'C#',
+            percent: 40
+        }
+        ]
+">
+    <div class="row">
+        <ul>
+        <li class="col-md-2 col-sm-4" ng-repeat="p in programming">
+            <div class="progress blue">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">{{p.percent}}</div>
+            </div>
+        </li>
+        </ul>
+
+
+        <div class="col-md-3 col-sm-6">
+            <div class="progress yellow">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value" aria-valuenow="50">50%</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- <div class="container">
 
     <div class="row row-content">
       <div class="col-xs-12 col-sm-1">
@@ -142,7 +200,7 @@
 
 
 
-  </div>
+  </div>-->
 
   <!--footer-->
 
@@ -157,7 +215,8 @@
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bower_components/angular/angular.min.js"></script>
 
 </body>
 
