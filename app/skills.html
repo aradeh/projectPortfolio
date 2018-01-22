@@ -42,10 +42,10 @@
       </div>
       <div class="navbar-collapse collapse navbar-right" id="navbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#"><span class="fa fa-home"></span>&nbsp;Home</a></li>
+          <li><a href="#"><span class="fa fa-home"></span>&nbsp;Home</a></li>
           <li><a href="#"><span class="fa fa-graduation-cap"></span>&nbsp;About</a></li>
           <li><a href="#"><span class="fa fa-briefcase"></span>&nbsp;Work</a></li>
-          <li><a href="#"><span class="fa fa-code"></span>&nbsp;Skills</a></li>
+          <li class="active"><a href="#"><span class="fa fa-code"></span>&nbsp;Skills</a></li>
           <li><a href="#"><span class="fa fa-file-o"></span>&nbsp;Resume</a></li>
           <li><a href="contact.html"><span class="fa fa-envelope-o"></span>&nbsp;Contact</a></li>
         </ul>
@@ -71,61 +71,167 @@
  <hr>
   <!--content-->
 
-    <div class="container" ng-init="
-        programming = [{
-         lang: 'Java',
-         percent: '80%'
-        },
-        {
-            lang: 'JavaScript',
-            percent: 85
-        },
-        {
-            lang: 'PHP',
-            percent: 75
-        },
-        {
-            lang: 'Pyhton',
-            percent: 60
-        },
-        {
-            lang: 'PL/SQL',
-            percent: 85
-        },
-        {
-            lang: 'C#',
-            percent: 40
-        }
-        ]
-">
+    <div class="container">
     <div class="row">
         <ul>
-        <li class="col-md-2 col-sm-4" ng-repeat="p in programming">
-            <div class="progress blue">
+        <li class="col-md-2 col-sm-4">
+            <div class="progress eighty">
                 <span class="progress-left">
                     <span class="progress-bar"></span>
                 </span>
                 <span class="progress-right">
                     <span class="progress-bar"></span>
                 </span>
-                <div class="progress-value">{{p.percent}}</div>
+                <div class="progress-value">80%</div>
             </div>
+            <span>Java/JavaEE</span>
         </li>
+            <li class="col-md-2 col-sm-4">
+                <div class="progress ninety">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                    <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                    <div class="progress-value">90%</div>
+                </div>
+                <span>JavaScript</span>
+            </li>
+
+            <li class="col-md-2 col-sm-4">
+                <div class="progress fifty">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                    <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                    <div class="progress-value">50%</div>
+                </div>
+                <span>Python</span>
+            </li>
+
+            <li class="col-md-2 col-sm-4">
+                <div class="progress sixty">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                    <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                    <div class="progress-value">60%</div>
+                </div>
+                <span>PHP</span>
+            </li>
+
+            <li class="col-md-2 col-sm-4">
+                <div class="progress seventyfive">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                    <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                    <div class="progress-value">75%</div>
+                </div>
+                <span>PL/SQL</span>
+            </li>
+
+            <li class="col-md-2 col-sm-4">
+                <div class="progress fifty">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                    <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                    <div class="progress-value">50%</div>
+                </div>
+                <span>C#</span>
+            </li>
+
+        </ul>
+    </div>
+    <br><br><br>
+    <div class="row">
+        <ul>
+            <li class="col-md-2 col-sm-4"">
+            <div class="progress eighty">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">80%</div>
+            </div>
+            <span>Oracle</span>
+            </li>
+            <li class="col-md-2 col-sm-4"">
+            <div class="progress seventyfive">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">75%</div>
+            </div>
+            <span>PostgreSQL</span>
+            </li>
+            <li class="col-md-2 col-sm-4"">
+            <div class="progress seventyfive">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">75%</div>
+            </div>
+            <span>MySQL</span>
+            </li>
+            <li class="col-md-2 col-sm-4"">
+            <div class="progress sixty">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">60%</div>
+            </div>
+            <span>MS-SQL Server</span>
+            </li>
+            <li class="col-md-2 col-sm-4"">
+            <div class="progress fifty">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">50%</div>
+            </div>
+            <span>MongoDB / DynamoDB</span>
+            </li>
+            <li class="col-md-2 col-sm-4"">
+            <div class="progress seventyfive">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">75%</div>
+            </div>
+            <span>JSON/GeoJSON</span>
+            </li>
         </ul>
 
-
-        <div class="col-md-3 col-sm-6">
-            <div class="progress yellow">
-                <span class="progress-left">
-                    <span class="progress-bar"></span>
-                </span>
-                <span class="progress-right">
-                    <span class="progress-bar"></span>
-                </span>
-                <div class="progress-value" aria-valuenow="50">50%</div>
-            </div>
-        </div>
     </div>
+
     </div>
 
     <!-- <div class="container">
